@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,800;0,900;1,400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}  
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+}
+.container-fluid form{
+    width: 90%;
+    max-width: 500px;
+    min-width: 300px;
+    padding: 3rem 2rem 1rem;
+    background: #f3f3f3;
+    border-radius: 4px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    position: relative;
+    
+}
+a {
+    text-decoration: none;
+    color: #f3f3f3;
+    transition: color .2s ease-in-out, box-shadow .2s ease-in-out;
+    padding: .25rem;
+    border-radius: 4px;
+}
+a:hover {
+    text-decoration: none;
+    box-shadow: inset 100px 0 0 0 #f3f3f3;
+    color: #141a34;
+}
+.fa-right-to-bracket{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #f3f3f3; 
+    color: #141a34;
+    font-size: 26px;
+    padding: 20px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+h1,h2 {
+    color: #f3f3f3;
+}
+ul {
+    list-style: none;
+    text-align: center;
+    width: 100%;
+}
+
+ul li:nth-of-type(n) {
+    margin-right: 1.5rem;
+}
+main {
+    height: 100vh;
+    padding: 1.5rem;
+    background-color: #141a34;
+}
+footer {
+    max-width: 100%;
+}
+.input-group{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    position: relative;
+    padding: .5rem;
+}
+.input-group label{
+    flex-basis: 30%;
+    margin-bottom: 0;
+}
+.input-group input{
+    flex-basis: 70%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 10px 0;
+    border-bottom: 1px solid #999;
+    color: #333;
+    font-size: 16px;
+}
+.input-group span {
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+    font-size: 14px;
+    color: rgba(255, 46, 46, 0.562);
+    letter-spacing: 1px;
+}
+.input-group span i {
+    color: seagreen;
+}
+.input::placeholder{
+    font-size: 14px;
+}
+
+form button{
+    background: #141a34;
+    color: #fff;
+    border-radius: 4px;
+    padding: 10px 40px;
+    outline: 0;
+    cursor: pointer;
+    display: block;
+    margin: 30px auto 10px;
+    border: none;
+}
+form button:hover {
+    background: #141a34e3;
+}
+section {  
+    height: 100vh;
+    padding: 0!important;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  .swiper-slide-text {
+      position: absolute;
+      bottom: 5%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 70%;
+      color: #141a34;
+      font-size: .9rem;
+  }
+  .swiperbtn {
+      color: #141a34;
+  }
+  .swiper {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .slide, .slide2, .slide3, .slide4 {
+    background-position: center center;
+    background-repeat:no-repeat;
+    background-size: cover;
+  }
+  .slide {
+    background-image: url(assets/images/deneme.jpg);
+  }
+  .slide2{
+    background-image: url(.assets/images/kayıt.jpg);
+  }
+  .slide3{
+    background-image: url(/assets/images/raporlar.jpg);
+  }
+  .slide4{
+    background-image: url(/assets/images/sorular.jpg);
+
+  }
+  .swiper-pagination-bullet {
+    background-color: #141a34;
+  }
+
+  .form__field:required, .form__field:invalid > #email-error {
+    display: none;
+  }
+@media screen and (max-width:500px) {
+    form input {
+        padding-left: 1rem;
+    }
+    form label,
+    form span {
+        font-size: 0.8rem;
+    }
+    #form-email, #form-password{
+        font-size: 0.8rem;
+  
+    }
+    #email-error, #password-error {
+        letter-spacing: 0px;
+        font-size: 0.8rem;
+    } 
+}
+@media screen and (max-width:767px) {
+    section {
+        display: none;
+    }
+    
+}
